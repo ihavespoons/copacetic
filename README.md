@@ -1,2 +1,3 @@
 # copacetic
-A place for code review because code reviews don't need to be perfect
+
+A code review toolkit that helps you get your head around unfamiliar and new codebases from a security standpoint.
