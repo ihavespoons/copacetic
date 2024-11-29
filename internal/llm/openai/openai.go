@@ -1,3 +1,7 @@
+/*
+Copyright © 2024 Ben Gittins
+*/
+
 package openai
 
 import (
@@ -20,16 +24,7 @@ type OpenAI struct {
 }
 
 func (oAI *OpenAI) CreateIndex(repositoryName string) error {
-	oAI.model.Index = index.New(pinecone.New(pinecone.Options{
-		IndexName: repositoryName,
-		Namespace: "copacetic",
-		CreateIndexOptions: pinecone.CreateIndexOptions{
-			Dimension:  0,
-			Metric:     "",
-			Serverless: nil,
-			Pod:        nil,
-		},
-	}), openaiembedder.New(openaiembedder.AdaEmbeddingV2)).WithIncludeContents(true)
+	oAI.model.Index = index.New(, openaiembedder.New(openaiembedder.AdaEmbeddingV2)).WithIncludeContents(true)
 	if oAI.model.Index == nil {
 		return errors.New("index failed to setup correctly")
 	}

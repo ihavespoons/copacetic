@@ -1,3 +1,7 @@
+/*
+Copyright © 2024 Ben Gittins
+*/
+
 package util
 
 import "net"

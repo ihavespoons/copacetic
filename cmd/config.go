@@ -15,6 +15,7 @@ type Config struct {
 	Temperature     float64
 	OpenAPIKey      string
 	AnthropicAPIKey string
+	Index           string
 }
 
 // initConfig reads in config file and ENV variables if set.
